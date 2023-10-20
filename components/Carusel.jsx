@@ -73,7 +73,7 @@ const Carusel = () => {
             />
           </motion.div>
 
-          <div className="absolute flex lg:flex flex-col justify-center group lg:justify-between hover:backdrop-blur-none duration-200 backdrop-blur-sm top-1/2 right-0 left-0 bottom-0 rounded-xl">
+          <div className="absolute flex lg:flex flex-col justify-center group lg:justify-between hover:backdrop-blur-none duration-200 backdrop-blur-sm md:top-0 top-1/2 right-0 left-0 bottom-0 rounded-xl">
             <h1 className="flex justify-center py-4 lg:py-8 font-bold text-xl text-white group-hover:text-transparent duration-200">
               {imageCarousel[currentImage].head}
             </h1>
@@ -82,11 +82,11 @@ const Carusel = () => {
             </p>
           </div>
           <div
-            className="absolute opacity-0 top-0 left-1/2 right-0 bottom-0"
+            className="absolute md:hidden opacity-0 top-0 left-1/2 right-0 bottom-0"
             onClick={nextImage}
           ></div>
           <div
-            className="absolute opacity-0 top-0 left-0 right-1/2 bottom-0"
+            className="absolute md:hidden opacity-0 top-0 left-0 right-1/2 bottom-0"
             onClick={prevImage}
           ></div>
         </div>
